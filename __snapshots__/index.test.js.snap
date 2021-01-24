@@ -1,0 +1,495 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#queries #spaceFlight should return a matching space flight when it exists 1`] = `
+Object {
+  "data": Object {
+    "spaceFlight": Object {
+      "flight_number": 90,
+      "launch_site": Object {
+        "site_id": "ccafs_slc_40",
+        "site_name": "CCAFS SLC 40",
+        "site_name_long": "Cape Canaveral Air Force Station Space Launch Complex 40",
+      },
+      "mission_name": "Starlink 4",
+      "rocket": Object {
+        "payloads": Array [
+          Object {
+            "norad_id": Array [],
+            "payload_id": "Starlink 4",
+          },
+        ],
+      },
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`#queries #spaceFlight should return null if no matching flight 1`] = `
+Object {
+  "data": Object {
+    "spaceFlight": null,
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`#queries #spaceFlights should return all flights with no filters 1`] = `
+Object {
+  "data": Object {
+    "spaceFlights": Array [
+      Object {
+        "flight_number": 90,
+        "launch_date_unix": 1581951955,
+        "launch_site": Object {
+          "site_id": "ccafs_slc_40",
+          "site_name": "CCAFS SLC 40",
+          "site_name_long": "Cape Canaveral Air Force Station Space Launch Complex 40",
+        },
+        "mission_name": "Starlink 4",
+        "rocket": Object {
+          "payloads": Array [
+            Object {
+              "norad_id": Array [],
+              "payload_id": "Starlink 4",
+            },
+          ],
+        },
+      },
+      Object {
+        "flight_number": 91,
+        "launch_date_unix": 1583556631,
+        "launch_site": Object {
+          "site_id": "ccafs_slc_40",
+          "site_name": "CCAFS SLC 40",
+          "site_name_long": "Cape Canaveral Air Force Station Space Launch Complex 40",
+        },
+        "mission_name": "CRS-20",
+        "rocket": Object {
+          "payloads": Array [
+            Object {
+              "norad_id": Array [
+                45341,
+              ],
+              "payload_id": "CRS-20",
+            },
+          ],
+        },
+      },
+      Object {
+        "flight_number": 92,
+        "launch_date_unix": 1584533760,
+        "launch_site": Object {
+          "site_id": "ksc_lc_39a",
+          "site_name": "KSC LC 39A",
+          "site_name_long": "Kennedy Space Center Historic Launch Complex 39A",
+        },
+        "mission_name": "Starlink 5",
+        "rocket": Object {
+          "payloads": Array [
+            Object {
+              "norad_id": Array [
+                45178,
+                45179,
+                45180,
+                45181,
+                45182,
+                45183,
+                45184,
+                45185,
+                45186,
+                45187,
+                45188,
+                45189,
+                45190,
+                45191,
+                45192,
+                45193,
+                45194,
+                45195,
+                45196,
+                45197,
+                45198,
+                45199,
+                45200,
+                45201,
+                45202,
+                45203,
+                45204,
+                45205,
+                45206,
+                45207,
+                45208,
+                45209,
+                45210,
+                45211,
+                45212,
+                45213,
+                45214,
+                45215,
+                45216,
+                45217,
+                45218,
+                45219,
+                45220,
+                45221,
+                45222,
+                45223,
+                45224,
+                45225,
+                45226,
+                45227,
+                45228,
+                45229,
+                45230,
+                45231,
+                45232,
+                45233,
+                45234,
+                45235,
+                45236,
+                45237,
+              ],
+              "payload_id": "Starlink 5",
+            },
+          ],
+        },
+      },
+      Object {
+        "flight_number": 93,
+        "launch_date_unix": 1587583800,
+        "launch_site": Object {
+          "site_id": "ksc_lc_39a",
+          "site_name": "KSC LC 39A",
+          "site_name_long": "Kennedy Space Center Historic Launch Complex 39A",
+        },
+        "mission_name": "Starlink 6",
+        "rocket": Object {
+          "payloads": Array [
+            Object {
+              "norad_id": Array [
+                72000,
+              ],
+              "payload_id": "Starlink 6",
+            },
+          ],
+        },
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`#queries #spaceFlights should return empty array when there are no matches 1`] = `
+Object {
+  "data": Object {
+    "spaceFlights": Array [],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`#queries #spaceFlights should return space flights after start date 1`] = `
+Object {
+  "data": Object {
+    "spaceFlights": Array [
+      Object {
+        "flight_number": 93,
+        "launch_date_unix": 1587583800,
+        "launch_site": Object {
+          "site_id": "ksc_lc_39a",
+          "site_name": "KSC LC 39A",
+          "site_name_long": "Kennedy Space Center Historic Launch Complex 39A",
+        },
+        "mission_name": "Starlink 6",
+        "rocket": Object {
+          "payloads": Array [
+            Object {
+              "norad_id": Array [
+                72000,
+              ],
+              "payload_id": "Starlink 6",
+            },
+          ],
+        },
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`#queries #spaceFlights should return space flights between min and max date 1`] = `
+Object {
+  "data": Object {
+    "spaceFlights": Array [
+      Object {
+        "flight_number": 91,
+        "launch_date_unix": 1583556631,
+        "launch_site": Object {
+          "site_id": "ccafs_slc_40",
+          "site_name": "CCAFS SLC 40",
+          "site_name_long": "Cape Canaveral Air Force Station Space Launch Complex 40",
+        },
+        "mission_name": "CRS-20",
+        "rocket": Object {
+          "payloads": Array [
+            Object {
+              "norad_id": Array [
+                45341,
+              ],
+              "payload_id": "CRS-20",
+            },
+          ],
+        },
+      },
+      Object {
+        "flight_number": 92,
+        "launch_date_unix": 1584533760,
+        "launch_site": Object {
+          "site_id": "ksc_lc_39a",
+          "site_name": "KSC LC 39A",
+          "site_name_long": "Kennedy Space Center Historic Launch Complex 39A",
+        },
+        "mission_name": "Starlink 5",
+        "rocket": Object {
+          "payloads": Array [
+            Object {
+              "norad_id": Array [
+                45178,
+                45179,
+                45180,
+                45181,
+                45182,
+                45183,
+                45184,
+                45185,
+                45186,
+                45187,
+                45188,
+                45189,
+                45190,
+                45191,
+                45192,
+                45193,
+                45194,
+                45195,
+                45196,
+                45197,
+                45198,
+                45199,
+                45200,
+                45201,
+                45202,
+                45203,
+                45204,
+                45205,
+                45206,
+                45207,
+                45208,
+                45209,
+                45210,
+                45211,
+                45212,
+                45213,
+                45214,
+                45215,
+                45216,
+                45217,
+                45218,
+                45219,
+                45220,
+                45221,
+                45222,
+                45223,
+                45224,
+                45225,
+                45226,
+                45227,
+                45228,
+                45229,
+                45230,
+                45231,
+                45232,
+                45233,
+                45234,
+                45235,
+                45236,
+                45237,
+              ],
+              "payload_id": "Starlink 5",
+            },
+          ],
+        },
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`#queries #spaceFlights should return space flights matching before end date 1`] = `
+Object {
+  "data": Object {
+    "spaceFlights": Array [
+      Object {
+        "flight_number": 90,
+        "launch_date_unix": 1581951955,
+        "launch_site": Object {
+          "site_id": "ccafs_slc_40",
+          "site_name": "CCAFS SLC 40",
+          "site_name_long": "Cape Canaveral Air Force Station Space Launch Complex 40",
+        },
+        "mission_name": "Starlink 4",
+        "rocket": Object {
+          "payloads": Array [
+            Object {
+              "norad_id": Array [],
+              "payload_id": "Starlink 4",
+            },
+          ],
+        },
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`#queries #spaceFlights should return space flights with matching norad_id 1`] = `
+Object {
+  "data": Object {
+    "spaceFlights": Array [
+      Object {
+        "flight_number": 92,
+        "launch_date_unix": 1584533760,
+        "launch_site": Object {
+          "site_id": "ksc_lc_39a",
+          "site_name": "KSC LC 39A",
+          "site_name_long": "Kennedy Space Center Historic Launch Complex 39A",
+        },
+        "mission_name": "Starlink 5",
+        "rocket": Object {
+          "payloads": Array [
+            Object {
+              "norad_id": Array [
+                45178,
+                45179,
+                45180,
+                45181,
+                45182,
+                45183,
+                45184,
+                45185,
+                45186,
+                45187,
+                45188,
+                45189,
+                45190,
+                45191,
+                45192,
+                45193,
+                45194,
+                45195,
+                45196,
+                45197,
+                45198,
+                45199,
+                45200,
+                45201,
+                45202,
+                45203,
+                45204,
+                45205,
+                45206,
+                45207,
+                45208,
+                45209,
+                45210,
+                45211,
+                45212,
+                45213,
+                45214,
+                45215,
+                45216,
+                45217,
+                45218,
+                45219,
+                45220,
+                45221,
+                45222,
+                45223,
+                45224,
+                45225,
+                45226,
+                45227,
+                45228,
+                45229,
+                45230,
+                45231,
+                45232,
+                45233,
+                45234,
+                45235,
+                45236,
+                45237,
+              ],
+              "payload_id": "Starlink 5",
+            },
+          ],
+        },
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
